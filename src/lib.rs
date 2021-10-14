@@ -21,16 +21,16 @@ pub async fn main(req: Request, env: Env) -> Result<Response> {
             kv.put(
                 "fc82307b-2664-4a88-be26-38c1b50d0eac:1",
                 r##"{
-                    "type": "CREATED",
-                    "version": 1,
-                    "inserted_at": "1634247836",
-                    "id": "fc82307b-2664-4a88-be26-38c1b50d0eac",
-                    "cid": "23d42487-d374-4df1-bebb-8a95428106d6",
-                    "data": {
-                        "email": "marcus@radell.net",
-                        "password_hash": "#password#",
-                    }
-                }"##,
+    "type": "CREATED",
+    "version": 1,
+    "inserted_at": "1634247836",
+    "cid": "23d42487-d374-4df1-bebb-8a95428106d6",
+    "id": "fc82307b-2664-4a88-be26-38c1b50d0eac",
+    "data": {
+        "email": "marcus@radell.net",
+        "password_hash": "#password#",
+    }
+}"##,
             )?
             .execute()
             .await?;
