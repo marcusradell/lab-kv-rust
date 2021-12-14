@@ -1,7 +1,9 @@
 use serde::Serialize;
 use worker::*;
 
+pub mod domains;
 mod utils;
+
 
 #[derive(Serialize)]
 struct CreatedResponse {
